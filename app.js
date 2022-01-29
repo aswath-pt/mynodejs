@@ -1,5 +1,7 @@
-var express = require('express');
-var app = express();
+let express = require('express');
+
+let app1 = express();  // Compliant
+app1.disable("x-powered-by");
 
 app.get('/',function(req,res) {
   res.send("PT PROJECT NODE JS APP");
